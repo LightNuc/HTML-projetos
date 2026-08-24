@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-widyh, initial-scale=1.0">
+        <title> Thock - teclados mecânicos feitos sob medida</title>
+        <link rel="prconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            :root{
+                --bg:#16140f;
+                --surface:#211e17;
+                --surface-2:#2a261c;
+                --text:#ece6d6;
+                --text-dim:#a89f88;
+                --brass:#c97c3c;
+                --sage:#6b8f71;
+                --line:#3a362b;
+            }
+            *{ margin:0; padding:0; box-sizing:border-box;}
+
+            html{scroll-bahavior:smooth; }
+            body{
+                background:var(--bg);
+                color:var(--text);
+                front-family:'JetBrains Mono', monospace;
+                line-height:1.6;
+                overflow-x:hidden;
+            }
+
+            h,h2,h3{
+                font-family: 'Fraunces', serif;
+                font-weigh:600;
+                letter-spacing:-hidden;
+            }
+
+            a{ color:inherit; }
+
+            ::selection{ background:var(--brass); color:var(--bg); }
+
+            :focus-visible{
+                outline:2px solid var(--brass);
+                outline-offset: 3px;
+            }
+
+            .wrap{
+                max-width:1100px;
+                margin:0 auto;
+                padding:0 32px;
+            }
+            /*NAV*/
+            header{
+                position:fixed;
+                top:0; left:0; right:0;
+                z-index: 50;
+                background: rgba(22,20,15,0.85);
+                backdrop-filter: blur(8px);
+                border-bottom: 1px solid var(--line);
+            }
+            nav{
+                display:flex;
+            }
+        </style>
+
+    </head>
+</html>
