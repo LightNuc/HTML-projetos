@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    background-color: black;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+ }
+ 
+ header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+ nav {
+    width: 60%;
+ }
+ 
+ ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+ }
+ 
+ li {
+   list-style: none;
+   color: aliceblue;
+   cursor: pointer;
+   font-size: 19px;
+   transition: .5s;
+   font-family: 'kdam thmor pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617
+}
+
+ #logo {
+    width: 150px;
+    height: auto;
+ }
+
+ .fotos-area {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+ }
+
+ .fotos-content {
+   display: grid;
+   grid-template-columns: repeat(3,2fr);
+   row-gap: 20px;
+   column-gap: 20px;
+ }
+
+ .foto {
+   width: 500px;
+   height: 300px;
+   background-size: cover;
+   background-position: 50% 50%;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 1s;
+   display: flex;
+   flex-direction: column;
+   opacity: 60%;
+   
+ }
+
+ .foto:hover {
+   transform: scale(1.02);
+   opacity: 100%;
+ }
+
+.pic-1 {
+   background-image: url('https://d3dh6of9cnaq4t.cloudfront.net/Pictures/480xany/2/3/4/19234_rev1tbm11547rseecaptioninfolder_464170.jpeg');
+}
+
+.pic-2 {
+   background-image: url('https://i.gadgets360cdn.com/large/the_batman_review_1646314314821.jpg');
+}
+
+.pic-3 {
+   background-image: url('https://media.cnn.com/api/v1/images/stellar/prod/201013141516-batman-movie-filming-1012-restricted.jpg?q=w_3000,h_2000,x_0,y_0,c_fill');
+}
+
+.pic-4 {
+   background-image: url('https://variety.com/wp-content/uploads/2022/02/The-Batman-03.jpg?w=1000');
+}
+
+.pic-5 {
+   background-image: url('https://www.looper.com/img/gallery/why-carmine-falcone-from-the-batman-looks-so-familiar/l-intro-1646240252.jpg')
+}
+
+.pic-6 {
+   background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg')
+}
+
+.pic-7 {
+    background-image: url('https://midianinja.org/wp-content/uploads/2022/03/20220307-ovicio-the-batman-movie-selina-kyle-catwoman-zoe-kravitz.jpg')
+ }
+
+ .pic-8 {
+    background-image: url('https://nypost.com/wp-content/uploads/sites/2/2022/03/the-batman-joker-spoiler-03.jpg?quality=75&strip=all&w=1024')
+ }
+
+ .pic-9 {
+    background-image: url('https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2022/11/Robert-Pattinson-2022-The-Batman-Batmobile.jpg')
+ }
+
+
+ footer {
+   height: 180px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+ span {
+    color: aliceblue;
+    font-family: 'kdam thmor pro', sans-serif;
+ }
+ 
+ .footer-navigation {
+    display: none;
+ }
+ 
+ .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 20px;
+ }
+ 
+ @media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+        
+    }
+ 
+    nav {
+        display: none;
+    }
+
+    .fotos-content {
+      justify-content: center;
+      grid-template-columns: 1fr;
+    }
+
+    .foto {
+      width: 350px;
+      opacity: 100%;
+    }
+}
