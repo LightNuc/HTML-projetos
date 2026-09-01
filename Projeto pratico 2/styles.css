@@ -5,14 +5,14 @@
    mais fosco). Mude só aqui pra trocar o tema inteiro.
    ====================================================== */
 :root{
-  --bg:#1c1712;          /* fundo geral — marrom quase preto, mas não tão "premium/frio" quanto antes */
-  --surface:#241f18;     /* fundo de cards e caixas elevadas */
-  --surface-2:#2c2620;   /* uma camada a mais de profundidade, usada em hover */
-  --text:#efe7d8;        /* texto principal */
-  --text-dim:#a89d89;    /* texto secundário / parágrafos */
-  --clay:#bf6d43;        /* cor de destaque principal — argila/terracota (antes era um "brass" mais dourado) */
-  --moss:#7c8f6d;        /* cor de destaque secundária — verde musgo, mais fosco que antes */
-  --line:#3c352a;        /* bordas e divisórias */
+  --bg:#191C24;          /* fundo geral */
+  --surface:#262b38;     /* fundo de cards e caixas elevadas */
+  --surface-2:#313749;   /* uma camada a mais de profundidade, usada em hover */
+  --text:#eef0f6;        /* texto principal */
+  --text-dim:#8d93a8;    /* texto secundário / parágrafos */
+  --clay:#4d9bff;        /* cor de destaque principal */
+  --moss:#e0a13f;        /* cor de destaque secundária */
+  --line:#333a4c;        /* bordas e divisórias */
 }
 
 *{ margin:0; padding:0; box-sizing:border-box; }
@@ -30,6 +30,7 @@ h1,h2,h3{
   font-family:'Fraunces', serif;
   font-weight:600;
   letter-spacing:-0.01em;
+  color:var(--moss); /* tom mostarda/amarelo nos titulos */
 }
 
 a{ color:inherit; }
@@ -52,8 +53,8 @@ header.site-header{
   position:fixed;
   top:0; left:0; right:0;
   z-index:50;
-  background:#161209;             /* cor sólida de base — sempre visível, mesmo sem blur */
-  background:rgba(22,18,12,0.96); /* opacidade bem alta (quase sólida) por cima da cor sólida acima */
+  background:#1c1f29;             /* cor sólida de base — sempre visível, mesmo sem blur */
+  background:rgba(28,31,41,0.96); /* opacidade bem alta (quase sólida) por cima da cor sólida acima */
   backdrop-filter:blur(8px);      /* efeito vidro — só some se o navegador não suportar, mas o fundo acima já resolve */
   -webkit-backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
@@ -193,13 +194,13 @@ nav{
 .key{
   --depress:0px;
   width:56px; height:56px;
-  background:linear-gradient(180deg, #37311f, #26201a);
-  border:1px solid #4a4331;
-  border-bottom:4px solid #17130d;
+  background:linear-gradient(180deg, #e6ac52, #c98a2e); /* caixa das teclas na cor mostarda/amarelo */
+  border:1px solid #b87c28;
+  border-bottom:4px solid #8f5f1a;
   border-radius:6px;
   display:flex; align-items:center; justify-content:center;
   font-size:0.9rem;
-  color:var(--text);
+  color:var(--text); /* letras das teclas demo */
   cursor:pointer;
   user-select:none;
   transform:translateY(var(--depress));
